@@ -35,12 +35,6 @@ public class MainActivity extends AppCompatActivity{
         mBtnSaveNote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-            }
-        });
-        mBtnSaveNote.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
                 SharedPreferences.Editor myEditor = myNoteSharedPref.edit();
                 String noteTxt = mInputNote.getText().toString();
                 myEditor.putString(NOTE_TEXT, noteTxt);
